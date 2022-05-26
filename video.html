@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preload" href="styles.css" as="style" />
+        <link rel="stylesheet" href="styles.css" />
+
+        <link
+            rel="preload"
+            href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+            as="style"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+        />
+
+        <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon" />
+
+        <title>White buscador de Videos</title>
+    </head>
+    <body>
+        <!--===== header =====-->
+        <header class="header">
+            <section class="header__contenedor max-width">
+                <div class="header__left">
+                    <a class="header__logo" title="inicio" href="/"
+                        ><img
+                            class="header__img"
+                            src="./img/logo2.png"
+                            alt="logo"
+                    /></a>
+                </div>
+                <div class="header__right">
+                    <nav class="header__navegacion">
+                        <a href="/" class="header__link">Fotos</a>
+                        <a class="header__link active" href="video.html"
+                            >Videos</a
+                        >
+                        <div class="header__contacto">
+                            <a
+                                class="header__link"
+                                title="facebook"
+                                href="https://web.facebook.com/garena.flores.9"
+                                target="_blank"
+                                ><i class="bx bxl-facebook-circle"></i
+                                ><span class="header__TextoContacto"
+                                    >Martin Flores</span
+                                ></a
+                            >
+                            <a
+                                class="header__link"
+                                title="instragram"
+                                href="https://www.instagram.com/martin_flores_28/"
+                                target="_blank"
+                                ><i class="bx bxl-instagram"></i
+                                ><span class="header__TextoContacto"
+                                    >martin_flores_28</span
+                                ></a
+                            >
+                        </div>
+                    </nav>
+
+                    <div class="header__opciones">
+                        <a
+                            class="header__icoUser"
+                            href="https://web.facebook.com/garena.flores.9"
+                            target="_blank"
+                            title="facebook"
+                            ><img
+                                class="icoUser"
+                                src="img/userMartin.jpg"
+                                alt="user"
+                        /></a>
+                        <button class="boton">
+                            <i class="bx bx-cloud-upload ico"></i> Subir
+                        </button>
+                        <div class="menu" id="menu">
+                            <i class="bx bx-menu ico"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <div class="overlay" id="overlay"></div>
+        <!--===== banner =====-->
+        <section class="baner" id="inicio">
+            <div class="baner__contenedor max-width">
+                <div>
+                    <h1 class="baner__titulo">
+                        Videos Gratis y Libres de Derechos para Descargar
+                    </h1>
+                    <p class="baner__parrafo">
+                        Miles de videos gratis y sin copyright compartidos por
+                        nuestra talentosa comunidad.
+                    </p>
+
+                    <div class="baner__formulario">
+                        <div class="baner_buscador">
+                            <span class="baner__search"
+                                ><i class="bx bx-search ico"></i
+                            ></span>
+                            <form class="baner__form" id="formulario">
+                                <input
+                                    class="baner__input"
+                                    type="text"
+                                    id="busqueda"
+                                    placeholder="Buscar imagenes, vectores, videos y musica"
+                                />
+                                <button
+                                    type="submit"
+                                    class="boton boton--black"
+                                >
+                                    <span class="boton__texto">Buscar</span>
+                                    <span class="boton__spinner"
+                                        ><i
+                                            class="bx bx-loader-circle bx-spin ico"
+                                        ></i
+                                    ></span>
+                                </button>
+                            </form>
+                        </div>
+                        <p class="baner__link">
+                            Vídeos populares:
+                            <a class="baner__link" href="#">anime</a>,
+                            <a class="baner__link" href="#">madre</a>,
+                            <a class="baner__link" href="#">naturaleza</a>,
+                            <a class="baner__link" href="#">flores</a>,
+                            <a class="baner__link" href="#">amor</a>,
+                            <a class="baner__link" href="#">lluvia</a>,
+                            <a class="baner__link" href="#">fuego</a>,
+                            <a class="baner__link" href="#">familia</a>,
+                            <a class="baner__link" href="#">mujer</a>,
+                            <a class="baner__link" href="#">personas</a>,
+                            <a class="baner__link" href="#">playa</a>,
+                            <a class="baner__link" href="#">cielo</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== contenedor =====-->
+        <main class="contenedor max-width">
+            <section class="contenedor__imagenes" id="resultados"></section>
+
+            <section class="contenedor__botones"></section>
+            <div class="descubrir">
+                <div>
+                    <p class="descubrir__title">
+                        Imágenes y videos gratuitos que puedes usar desde
+                        cualquier lugar
+                    </p>
+                    <p class="descubrir__parrafo">
+                        White es una comunidad dinámica de creativos que
+                        comparten imágenes y videos sin derechos de autor. Todos
+                        los contenidos se publican bajo la Licencia White, que
+                        los hace seguros para usar sin pedir permiso o dar
+                        crédito al artista, incluso con fines comerciales.
+                    </p>
+                    <a class="descubrir__enlace" href="#">Aprenda más...</a>
+                </div>
+                <p class="descubrir__copy">
+                    This site is protected by reCAPTCHA and the Google
+                    <a class="descubrir__link" href="#">Privacy Policy</a> and
+                    <a href="#">Terms</a> of
+                    <a class="descubrir__link" href="#">Service apply</a>.
+                </p>
+            </div>
+        </main>
+        <!--===== modal =====-->
+        <section class="modal" id="modal">
+            <section class="modal__contenedor">
+                <div class="modal__item">
+                    <div class="modal__top">
+                        <div class="modal__usuario">
+                            <img
+                                class="modal__imagenUsuario"
+                                id="modalUsuarioImg"
+                                src="img/bg2.avif"
+                                alt="user"
+                            />
+                            <div>
+                                <p class="modal__userText"></p>
+                                <p class="modal__arroba"></p>
+                            </div>
+                        </div>
+                        <div class="modal__opciones">
+                            <a
+                                id="modal__link"
+                                href=""
+                                class="contenedor__descargarLink"
+                                download
+                                title="Descargar imagen"
+                            ></a>
+                            <button
+                                class="boton"
+                                id="descargarBoton"
+                                title="Descargar imagen"
+                            >
+                                Descargar gratis
+                            </button>
+                            <div class="modal__close">
+                                <i class="bx bx-x ico"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__imagen">
+                        <div class="modal__image">
+                            <div id="contenidoModal"></div>
+                            <div class="moda__fullScreen">
+                                <span class="fullScreen" id="fullScreen"
+                                    ><i class="bx bx-fullscreen ico"></i
+                                ></span>
+                                <span class="exitScreen" id="exit-fullScreen"
+                                    ><i class="bx bx-exit-fullscreen ico"></i
+                                ></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__bottom">
+                        <div class="modal__descripcion">
+                            <div>
+                                <p class="modal__destiTulo">
+                                    <i class="bx bxs-comment ico"></i
+                                    ><b>Comentarios:</b>
+                                </p>
+                                <span
+                                    class="modal__descText"
+                                    id="coment"
+                                ></span>
+                            </div>
+                            <div>
+                                <p class="modal__destiTulo">
+                                    <i class="bx bxs-cloud-download"></i
+                                    ><b>Descargas:</b>
+                                </p>
+                                <span
+                                    class="modal__descText"
+                                    id="descargas"
+                                ></span>
+                            </div>
+                            <div>
+                                <p class="modal__destiTulo">
+                                    <i class="bx bxs-like"></i><b>Likes:</b>
+                                </p>
+                                <span class="modal__descText" id="likes"></span>
+                            </div>
+                            <div>
+                                <p class="modal__destiTulo">
+                                    <i class="bx bxs-purchase-tag-alt"></i
+                                    ><b>Etiquetas:</b>
+                                </p>
+                                <span class="modal__descText" id="tags"></span>
+                            </div>
+                            <div class="duracionDisplay">
+                                <p class="modal__destiTulo">
+                                    <i class="bx bxs-time-five ico"></i
+                                    ><b>Duracion:</b>
+                                </p>
+                                <span
+                                    class="modal__descText"
+                                    id="duracion"
+                                ></span>
+                            </div>
+                        </div>
+                        <div class="modal__compartir">
+                            <a class="modal__compartirLink" href="#"
+                                >Compartir <i class="bx bxs-share"></i
+                            ></a>
+                            <a class="modal__compartirLink" href="#"
+                                ><i class="bx bxs-info-circle"></i
+                                >Informacion</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!--===== subir =====-->
+        <a href="#inicio" class="subir"
+            ><i class="bx bxs-chevron-up-circle ico"></i
+        ></a>
+        <script src="js/video.js" type="module"></script>
+    </body>
+</html>

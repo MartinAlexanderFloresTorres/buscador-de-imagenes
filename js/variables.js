@@ -1,0 +1,11 @@
+export const menuBtn = document.querySelector("#menu");
+export const overlay = document.querySelector("#overlay");
+export const body = document.querySelector("body");
+export const links = document.querySelectorAll(".header__link");
+export const resultados = document.querySelector("#resultados");
+export const formulario = document.querySelector("#formulario");
+export const subir = document.querySelector(".subir");
+export const modal = document.querySelector("#modal");
+export const inicioBanner = document.querySelector("#inicio");
+export const tipoModal = document.querySelector("#contenidoModal");
+export const paginacionDiv = document.querySelector(".contenedor__botones")
